@@ -579,6 +579,7 @@ class SendoutElement extends Element
             // https://github.com/putyourlightson/craft-campaign/issues/316
             if (!$response->getIsRedirection()) {
                 $response->redirect($this->getCpPreviewUrl());
+                return;
             }
         }
 
